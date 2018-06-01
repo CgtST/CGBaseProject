@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Success View Controller-->
+        <scene sceneID="wn7-re-Kcr">
+            <objects>
+                <viewController storyboardIdentifier="IBBaseSuccessViewController" id="7fc-dy-fYl" customClass="IBBaseSuccessViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6DW-dJ-nXh"/>
+                        <viewControllerLayoutGuide type="bottom" id="0wE-0N-0Ae"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vjw-qY-NXr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9m-HZ-ryf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub_success" translatesAutoresizingMaskIntoConstraints="NO" id="m7q-ET-e1L">
+                                        <rect key="frame" x="20" y="20" width="335" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Yfg-Kt-Fnz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置新交易密码" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s4X-o6-275">
+                                        <rect key="frame" x="15" y="160" width="345" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="2HK-Xd-JKT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kP-Sx-THB">
+                                        <rect key="frame" x="15" y="260" width="345" height="50"/>
+                                        <color key="backgroundColor" red="0.98431372549019602" green="0.38039215686274508" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Upu-LK-fXk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="确定">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tapAction:" destination="7fc-dy-fYl" eventType="touchUpInside" id="beo-ea-FHn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的交易密码已经设置成功 新密码将即时生效于所有互联网交易服务媒介" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="e1M-UZ-638">
+                                        <rect key="frame" x="15" y="190" width="345" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fAn-y3-MEd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="m7q-ET-e1L" secondAttribute="trailing" constant="20" id="1yI-l5-zb1"/>
+                                    <constraint firstItem="e1M-UZ-638" firstAttribute="top" secondItem="s4X-o6-275" secondAttribute="bottom" constant="10" id="54A-cp-B4p"/>
+                                    <constraint firstItem="5kP-Sx-THB" firstAttribute="top" secondItem="e1M-UZ-638" secondAttribute="bottom" constant="20" id="6IV-BO-GQ9"/>
+                                    <constraint firstItem="s4X-o6-275" firstAttribute="leading" secondItem="z9m-HZ-ryf" secondAttribute="leading" constant="15" id="6eh-F5-1uz"/>
+                                    <constraint firstItem="e1M-UZ-638" firstAttribute="leading" secondItem="z9m-HZ-ryf" secondAttribute="leading" constant="15" id="Ead-T2-owR"/>
+                                    <constraint firstItem="m7q-ET-e1L" firstAttribute="leading" secondItem="z9m-HZ-ryf" secondAttribute="leading" constant="20" id="F8i-Yp-pOv"/>
+                                    <constraint firstAttribute="trailing" secondItem="e1M-UZ-638" secondAttribute="trailing" constant="15" id="Sep-Ho-hOe"/>
+                                    <constraint firstItem="m7q-ET-e1L" firstAttribute="top" secondItem="z9m-HZ-ryf" secondAttribute="top" constant="20" id="TCh-Nq-4qn"/>
+                                    <constraint firstAttribute="trailing" secondItem="s4X-o6-275" secondAttribute="trailing" constant="15" id="WNf-wE-liN"/>
+                                    <constraint firstItem="5kP-Sx-THB" firstAttribute="leading" secondItem="z9m-HZ-ryf" secondAttribute="leading" constant="15" id="cOd-pe-3Pw"/>
+                                    <constraint firstItem="s4X-o6-275" firstAttribute="top" secondItem="m7q-ET-e1L" secondAttribute="bottom" constant="20" id="ddI-np-K79"/>
+                                    <constraint firstAttribute="trailing" secondItem="5kP-Sx-THB" secondAttribute="trailing" constant="15" id="njG-HO-r5R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z9m-HZ-ryf" firstAttribute="top" secondItem="6DW-dJ-nXh" secondAttribute="bottom" id="3xI-sx-Unb"/>
+                            <constraint firstAttribute="trailing" secondItem="z9m-HZ-ryf" secondAttribute="trailing" id="5hp-te-XiE"/>
+                            <constraint firstItem="0wE-0N-0Ae" firstAttribute="top" secondItem="z9m-HZ-ryf" secondAttribute="bottom" id="eQD-Wp-emy"/>
+                            <constraint firstItem="z9m-HZ-ryf" firstAttribute="leading" secondItem="Vjw-qY-NXr" secondAttribute="leading" id="wX3-jR-oqJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="m_Confirm" destination="5kP-Sx-THB" id="tCl-LI-XmK"/>
+                        <outlet property="m_Infor" destination="e1M-UZ-638" id="HwP-N4-dbq"/>
+                        <outlet property="m_Title" destination="s4X-o6-275" id="DGY-lN-HvC"/>
+                        <outlet property="m_TitleLbTop" destination="ddI-np-K79" id="nwI-au-PiV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HiW-Gd-3RA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sub_success" width="90" height="90"/>
+    </resources>
+</document>

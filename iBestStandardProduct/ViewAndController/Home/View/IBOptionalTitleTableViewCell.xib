@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="IBOptionalTitleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwZ-vD-bqo">
+                        <rect key="frame" x="273" y="4" width="35" height="31.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="bqS-4L-8Tu"/>
+                        </constraints>
+                        <state key="normal" image="ib_more"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自选股" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8L-bh-vz4">
+                        <rect key="frame" x="31" y="10" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Wim-Mm-ZKR"/>
+                            <constraint firstAttribute="height" constant="20" id="YOr-3l-rxl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IQ-UU-iV7">
+                        <rect key="frame" x="15" y="13" width="6" height="14"/>
+                        <color key="backgroundColor" red="1" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="6" id="4s6-34-NVs"/>
+                            <constraint firstAttribute="height" constant="14" id="tXe-JM-3oD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBR-aU-knz">
+                        <rect key="frame" x="0.0" y="38.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gRb-oC-ejk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3IQ-UU-iV7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1f2-WU-eWR"/>
+                    <constraint firstItem="3IQ-UU-iV7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="91c-8v-Bjj"/>
+                    <constraint firstItem="BwZ-vD-bqo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="LYh-3R-PEg"/>
+                    <constraint firstAttribute="bottom" secondItem="BwZ-vD-bqo" secondAttribute="bottom" constant="4" id="MnA-GO-mcF"/>
+                    <constraint firstItem="A8L-bh-vz4" firstAttribute="leading" secondItem="3IQ-UU-iV7" secondAttribute="trailing" constant="10" id="PdW-43-Ys9"/>
+                    <constraint firstAttribute="trailing" secondItem="xBR-aU-knz" secondAttribute="trailing" id="R0p-Vz-ioD"/>
+                    <constraint firstAttribute="trailing" secondItem="BwZ-vD-bqo" secondAttribute="trailing" constant="12" id="XF2-Wo-WEg"/>
+                    <constraint firstItem="A8L-bh-vz4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dLn-sd-Vrw"/>
+                    <constraint firstItem="3IQ-UU-iV7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ivj-P3-Jgw"/>
+                    <constraint firstAttribute="bottom" secondItem="xBR-aU-knz" secondAttribute="bottom" id="lxW-Mq-5ee"/>
+                    <constraint firstItem="xBR-aU-knz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zbO-Zo-TTN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineView" destination="xBR-aU-knz" id="eql-Je-pui"/>
+                <outlet property="moreButton" destination="BwZ-vD-bqo" id="f0x-1c-mzc"/>
+                <outlet property="titleLabel" destination="A8L-bh-vz4" id="vD7-Uc-kgz"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="-3"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ib_more" width="24" height="24"/>
+    </resources>
+</document>

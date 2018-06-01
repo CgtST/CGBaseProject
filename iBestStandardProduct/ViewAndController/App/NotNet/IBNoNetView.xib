@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IBNoNetView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQ2-i0-bpq">
+                    <rect key="frame" x="15" y="7.5" width="20" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="FWK-Xg-cR4"/>
+                        <constraint firstAttribute="height" constant="22" id="bHA-8N-1Y4"/>
+                    </constraints>
+                    <state key="normal" image="n_warn"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前网络不可用，请检查你的网络设置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lod-5x-rrY">
+                    <rect key="frame" x="45" y="0.0" width="290" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKz-D4-Tgb">
+                    <rect key="frame" x="335" y="0.0" width="40" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="4yW-vR-ALl"/>
+                    </constraints>
+                    <state key="normal" image="n_arrow"/>
+                    <connections>
+                        <action selector="noNetClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="EZd-ag-7oz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.80784313730000001" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="MKz-D4-Tgb" firstAttribute="leading" secondItem="Lod-5x-rrY" secondAttribute="trailing" id="1CJ-I7-TC6"/>
+                <constraint firstItem="Lod-5x-rrY" firstAttribute="centerY" secondItem="MQ2-i0-bpq" secondAttribute="centerY" id="4FP-Cy-wme"/>
+                <constraint firstItem="Lod-5x-rrY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BWU-bG-MZu"/>
+                <constraint firstAttribute="trailing" secondItem="MKz-D4-Tgb" secondAttribute="trailing" id="MDq-ac-hma"/>
+                <constraint firstItem="Lod-5x-rrY" firstAttribute="leading" secondItem="MQ2-i0-bpq" secondAttribute="trailing" constant="10" id="Oso-gV-WLF"/>
+                <constraint firstAttribute="bottom" secondItem="Lod-5x-rrY" secondAttribute="bottom" id="XTS-UJ-Mi8"/>
+                <constraint firstAttribute="bottom" secondItem="MKz-D4-Tgb" secondAttribute="bottom" id="ZMe-uv-YbM"/>
+                <constraint firstItem="MQ2-i0-bpq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="gqx-Vh-3M9"/>
+                <constraint firstItem="MKz-D4-Tgb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i95-GJ-I52"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="72.5" y="-139.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="n_arrow" width="8" height="15"/>
+        <image name="n_warn" width="20" height="20"/>
+    </resources>
+</document>

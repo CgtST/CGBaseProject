@@ -1,0 +1,26 @@
+NORMAL   NIGHT    RED
+#ffffff  #343434  #fafafa BG
+#aaaaaa  #313131  #aaaaaa SEP
+#0000ff  #ffffff  #fa0000 TINT
+#000000  #ffffff  #000000 TEXT
+#ffffff  #444444  #ffffff BAR
+#f0f0f0  #222222  #dedede HIGHLIGHTED
+#333333  #ffffff  #ffffff TextColor
+#666666  #999999  #999999 ContentColor
+#f5f5f5  #1d1d1f  #1d1d1f BackBottemColor
+#f5f5f5  #242426  #242426 BackContentColor1
+#f0f0f0  #242426  #242426 BackContentColor2
+#666666  #cccccc  #cccccc IconColor
+#ffffff  #242426  #ffffff QContentColor
+#f0f0f0  #323232  #323232 SeperateLine
+#999999  #ffffff  #ffffff QTextTwoColor
+#ffffff  #1d1d1d  #ffffff QBottomColor
+#e8e8e8  #323232  #ffffff QSeplineColor
+#333333  #999999  #ffffff QTextThreeColor
+#d6d6d6  #1d1d1d  #ffffff QCellSelectColor
+#2e2e2e  #242424  #ffffff QBar
+#e8e8e8  #1d1d1d  #ffffff QPresssColor
+#2e2e2e  #202020  #ffffff QBar
+#ffffff  #999999  #ffffff QTextFourColor
+#f2f2f2  #1d1d1d  #ffffff QHeaderColor
+

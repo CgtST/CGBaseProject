@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IBXMenuChooseView">
+            <connections>
+                <outlet property="m_TableBottomConstant" destination="AbY-pn-udm" id="aIm-mW-642"/>
+                <outlet property="m_TableLeftConstant" destination="2z9-ZK-ktR" id="HCU-Ih-kp2"/>
+                <outlet property="m_TableRightConstant" destination="ddE-zd-Fem" id="Ggc-gh-Ztp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IBXMenuChooseView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33p-49-Tju">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="450"/>
+                    <connections>
+                        <action selector="hideAction:" destination="-1" eventType="touchUpInside" id="XcP-Sd-OQA"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v8c-0J-GD4">
+                    <rect key="frame" x="0.0" y="350" width="320" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="bXa-Sq-Wa3"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="v8c-0J-GD4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2z9-ZK-ktR"/>
+                <constraint firstItem="33p-49-Tju" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7fZ-UK-c5M"/>
+                <constraint firstAttribute="bottom" secondItem="v8c-0J-GD4" secondAttribute="bottom" id="AbY-pn-udm"/>
+                <constraint firstAttribute="bottom" secondItem="33p-49-Tju" secondAttribute="bottom" id="ajG-U3-Fbb"/>
+                <constraint firstAttribute="trailing" secondItem="v8c-0J-GD4" secondAttribute="trailing" id="ddE-zd-Fem"/>
+                <constraint firstItem="33p-49-Tju" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rEZ-9V-oW6"/>
+                <constraint firstAttribute="trailing" secondItem="33p-49-Tju" secondAttribute="trailing" id="ue0-6i-FAV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="m_TableHeight" destination="bXa-Sq-Wa3" id="TMY-Dx-k87"/>
+                <outlet property="m_TableView" destination="v8c-0J-GD4" id="mLO-KM-ing"/>
+            </connections>
+            <point key="canvasLocation" x="-73" y="36"/>
+        </view>
+    </objects>
+</document>
